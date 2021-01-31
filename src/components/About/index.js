@@ -28,7 +28,7 @@ const About = () => {
             . I've worked on multiple projects to improve my coding skills, and
             I did an internship with L'Enfant as a full stack developer. I am
             accustomed to JavaScript technologies such as{" "}
-            <Highlight>Express.JS, Node.JS, React.js</Highlight>. I've worked
+            <Highlight>Express.js, Node.js, React.js</Highlight>. I've worked
             with a wide array of <Highlight>cloud databases</Highlight>, such as{" "}
             <Highlight>MongoDB</Highlight>, and I'm experienced with using{" "}
             <Highlight>AWS technologies</Highlight>. While Javascript is my

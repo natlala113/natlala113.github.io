@@ -13,6 +13,8 @@ import {
   ProjectContentSubhead,
   ProjectSvg,
   ProjectLink,
+  ProjectTagHolder,
+  ProjectSpanBadge,
 } from "./ProjectElements";
 import project1 from "../../images/project1.png";
 import project2 from "../../images/project2.png";
@@ -20,11 +22,14 @@ import project3 from "../../images/project3.png";
 import project4 from "../../images/project4.png";
 import project5 from "../../images/project5.png";
 import { FaGithub, FaRegPlayCircle } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Project = () => {
   const [isSmall, setIsSmall] = useState(false);
 
   useEffect(() => {
+    Aos.init({ duration: 1250 });
     const hideMenu = () => {
       if (window.innerWidth < 769) {
         setIsSmall(true);
@@ -42,13 +47,18 @@ const Project = () => {
   return (
     <ProjectContent id="project">
       <ProjectHeader>Projects</ProjectHeader>
-      <ProjectContainer>
+      <ProjectContainer data-aos="fade-up">
         {" "}
         <ProjectContentWrapper>
           <ProjectText right={true}>
             <ProjectContentHeader right={true}>
               Doughy's Trivia Game
             </ProjectContentHeader>
+            <ProjectTagHolder>
+              <ProjectSpanBadge>Node.js</ProjectSpanBadge>
+              <ProjectSpanBadge>React</ProjectSpanBadge>
+              <ProjectSpanBadge>styled-components</ProjectSpanBadge>
+            </ProjectTagHolder>
             <ProjectContentSubhead>
               <ProjectLink
                 href="https://github.com/dolphini13/trivia-game-react"
@@ -85,7 +95,7 @@ const Project = () => {
           </ProjectImgWrapper>
         </ProjectContentWrapper>
       </ProjectContainer>
-      <ProjectContainer>
+      <ProjectContainer data-aos="fade-down">
         {" "}
         <ProjectContentWrapper>
           {!isSmall ? (
@@ -97,6 +107,11 @@ const Project = () => {
           )}
           <ProjectText>
             <ProjectContentHeader>Transpose-PLS</ProjectContentHeader>
+            <ProjectTagHolder>
+              <ProjectSpanBadge>Node.js</ProjectSpanBadge>
+              <ProjectSpanBadge>React</ProjectSpanBadge>
+              <ProjectSpanBadge>CSS 3</ProjectSpanBadge>
+            </ProjectTagHolder>
             <ProjectContentSubhead>
               <ProjectLink
                 href="https://github.com/dolphini13/rainbow6-random"
@@ -121,9 +136,9 @@ const Project = () => {
             </ProjectContentSubhead>
             <ProjectParagraph>
               Transpose-PLS is a website built with <Highlight>React</Highlight>{" "}
-              and <Highlight>styled-components</Highlight>. This application is
-              aimmed for musicians who would like to transpose music chords to
-              the keys they wish to play the game in.
+              and <Highlight>CSS 3</Highlight>. This application is aimmed for
+              musicians who would like to transpose music chords to the keys
+              they wish to play the game in.
             </ProjectParagraph>
           </ProjectText>
           {isSmall ? (
@@ -135,13 +150,19 @@ const Project = () => {
           )}
         </ProjectContentWrapper>
       </ProjectContainer>
-      <ProjectContainer>
+      <ProjectContainer data-aos="fade-left">
         {" "}
         <ProjectContentWrapper>
           <ProjectText right={true}>
             <ProjectContentHeader right={true}>
               R6 Siege Randomiser
             </ProjectContentHeader>
+            <ProjectTagHolder>
+              <ProjectSpanBadge>Node.js</ProjectSpanBadge>
+              <ProjectSpanBadge>Express</ProjectSpanBadge>
+              <ProjectSpanBadge>EJS</ProjectSpanBadge>
+              <ProjectSpanBadge>CSS 3</ProjectSpanBadge>
+            </ProjectTagHolder>
             <ProjectContentSubhead>
               <ProjectLink
                 href="https://github.com/dolphini13/rainbow6-random"
@@ -168,7 +189,7 @@ const Project = () => {
               This web application allows you to randomise your loadout on
               selected Operators (characters) for the video game Rainbow Six
               Siege. It is written in <Highlight>JavaScript</Highlight>,
-              utilising <Highlight>Express.JS</Highlight>,{" "}
+              utilising <Highlight>Express.js</Highlight>,{" "}
               <Highlight>EJS</Highlight> and <Highlight>CSS 3</Highlight>. To
               get information for the characters as there is no official API, I
               wrote a script to scrap from the game's Wikia page.
@@ -179,7 +200,7 @@ const Project = () => {
           </ProjectImgWrapper>
         </ProjectContentWrapper>
       </ProjectContainer>
-      <ProjectContainer>
+      <ProjectContainer data-aos="fade-right">
         {" "}
         <ProjectContentWrapper>
           {!isSmall ? (
@@ -191,6 +212,11 @@ const Project = () => {
           )}
           <ProjectText>
             <ProjectContentHeader>QuikJob</ProjectContentHeader>
+            <ProjectTagHolder>
+              <ProjectSpanBadge>Ruby on Rails</ProjectSpanBadge>
+              <ProjectSpanBadge>PostgreSQL</ProjectSpanBadge>
+              <ProjectSpanBadge>CSS 3</ProjectSpanBadge>
+            </ProjectTagHolder>
             <ProjectContentSubhead>
               <ProjectLink
                 href="https://github.com/rmit-s3572300-mohammad-albaghli/QuikJob"
@@ -231,10 +257,15 @@ const Project = () => {
           )}
         </ProjectContentWrapper>
       </ProjectContainer>
-      <ProjectContainer last={true}>
+      <ProjectContainer last={true} data-aos="fade-down">
         <ProjectContentWrapper>
           <ProjectText right={true}>
             <ProjectContentHeader right={true}>Mei-Bot</ProjectContentHeader>
+            <ProjectTagHolder>
+              <ProjectSpanBadge>Node.js</ProjectSpanBadge>
+              <ProjectSpanBadge>Express</ProjectSpanBadge>
+              <ProjectSpanBadge>Discord.js</ProjectSpanBadge>
+            </ProjectTagHolder>
             <ProjectContentSubhead>
               <ProjectLink
                 href="https://discord.com/oauth2/authorize?client_id=578547276784336940&permissions=268435504&scope=bot"
@@ -250,7 +281,7 @@ const Project = () => {
             <ProjectParagraph>
               Mei-Bot us a utility bot for the chat application
               <Highlight> Discord</Highlight>. It is written in JavaScript,
-              utilising <Highlight>Node.JS</Highlight> and multiple MIT licensed
+              utilising <Highlight>Node.js</Highlight> and multiple MIT licensed
               packages such as
               <Highlight>Discord.js and NERDS</Highlight> to achieve its full
               potential. The bot is capable of running multiple minigame such as{" "}

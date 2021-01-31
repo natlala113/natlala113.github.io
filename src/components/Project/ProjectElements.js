@@ -42,13 +42,15 @@ export const ProjectContainer = styled.div`
   margin-top: 30px;
   border-bottom: 5px solid;
   border-bottom-color: ${theme.colors.goldenYellow};
-  min-width: 280px;
+  min-width: 600px;
   @media screen and (max-width: 768px) {
     height: auto;
     justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: unset;
+    min-width: 280px !important;
   }
 
   ${(props) => (props.last ? `margin-bottom: 50px;` : ``)}
@@ -102,10 +104,12 @@ export const ProjectText = styled.div`
   word-wrap: break-word;
   padding: 30px;
   width: 65%;
+  min-width: 295px;
   @media screen and (max-width: 768px) {
     width: 70%;
     margin-left: 0px;
     padding: 10px;
+    min-width: 200px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -144,7 +148,7 @@ export const ProjectSvg = styled.span`
 export const ProjectContentSubhead = styled.div`
   font-size: ${theme.fonts.desktop.body};
   color: ${theme.colors.darkBrown};
-  margin: 10px 0;
+  margin: 5px 0;
   display: flex;
   align-items: center;
   @media screen and (max-width: 768px) {
@@ -177,4 +181,21 @@ export const ProjectLink = styled.a`
     transition: all 0.2s ease-in-out;
     color: ${theme.colors.goldenYellow};
   }
+`;
+
+export const ProjectTagHolder = styled.div`
+  overflow-wrap: break-word;
+  margin: 10px 0;
+  font-size: ${theme.fonts.mobile.tiny};
+  word-break: break-all;
+`;
+
+export const ProjectSpanBadge = styled.span`
+  border-radius: 5px;
+  color: ${theme.colors.floralWhite};
+  background-color: coral;
+  padding: 0 5px;
+  margin-right: 3px;
+  margin-top: 2px;
+  display: inline-block;
 `;
