@@ -9,7 +9,7 @@ export const AboutContent = styled.div`
   align-items: center;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23271f18' fill-opacity='0.30' fill-rule='evenodd'/%3E%3C/svg%3E");
   min-height: 450px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -27,7 +27,7 @@ export const AboutWrapper = styled.div`
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -96,14 +96,16 @@ export const AboutParagraph = styled.div`
   }
 
   @media screen and (max-width: 1366px) {
+    text-align: center;
+    font-size: ${theme.fonts.desktop.h5};
+  }
+
+  @media screen and (max-width: 1000px) {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
     font-size: ${theme.fonts.desktop.h5};
-  }
-
-  @media screen and (max-width: 768px) {
     width: 80%;
     margin-top: 10px;
   }
