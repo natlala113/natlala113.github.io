@@ -29,7 +29,7 @@ const Project = () => {
   const [isSmall, setIsSmall] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 1250 });
+    Aos.init({ duration: 1250, once: true });
     const hideMenu = () => {
       if (window.innerWidth < 769) {
         setIsSmall(true);
@@ -37,6 +37,8 @@ const Project = () => {
         setIsSmall(false);
       }
     };
+
+    hideMenu();
 
     window.addEventListener("resize", hideMenu);
     return () => {
@@ -47,7 +49,7 @@ const Project = () => {
   return (
     <ProjectContent id="project">
       <ProjectHeader>Projects</ProjectHeader>
-      <ProjectContainer data-aos="fade-up">
+      <ProjectContainer data-aos="fade-down">
         {" "}
         <ProjectContentWrapper>
           <ProjectText right={true}>
@@ -150,7 +152,7 @@ const Project = () => {
           )}
         </ProjectContentWrapper>
       </ProjectContainer>
-      <ProjectContainer data-aos="fade-left">
+      <ProjectContainer data-aos="fade-down">
         {" "}
         <ProjectContentWrapper>
           <ProjectText right={true}>
@@ -200,7 +202,7 @@ const Project = () => {
           </ProjectImgWrapper>
         </ProjectContentWrapper>
       </ProjectContainer>
-      <ProjectContainer data-aos="fade-right">
+      <ProjectContainer data-aos="fade-down">
         {" "}
         <ProjectContentWrapper>
           {!isSmall ? (

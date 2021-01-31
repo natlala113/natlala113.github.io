@@ -61,7 +61,7 @@ export const AboutText = styled.div`
   margin-left: 20px;
   word-wrap: break-word;
   padding: 10px;
-
+  text-align: justify;
   @media screen and (max-width: 768px) {
     width: 70%;
     margin-left: 0px;
