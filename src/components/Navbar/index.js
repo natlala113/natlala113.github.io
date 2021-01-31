@@ -28,7 +28,7 @@ const Navbar = () => {
           duration={700}
           exact="true"
         >
-          Project
+          Projects
         </MenuLink>
       </Menu>
     </Nav>

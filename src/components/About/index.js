@@ -25,7 +25,7 @@ const About = ({ contactToggle }) => {
           Hello! My name is <Highlight>Mohammad Albaghli</Highlight>, but I
           usually go by Moh. I am a passionate{" "}
           <Highlight>full stack developer</Highlight> and a student who is
-          currently completing{" "}
+          currently completing a{" "}
           <Highlight>
             Master of Computer Science degree at RMIT University
           </Highlight>
@@ -42,7 +42,7 @@ const About = ({ contactToggle }) => {
           Recently, I added <Highlight>Firebase</Highlight> and{" "}
           <Highlight>Material-UI</Highlight> to add to my skillset. I have also
           been working with <Highlight>styled-components</Highlight> and picking
-          up <Highlight>Figma</Highlight> to sharpened my design skills.
+          up <Highlight>Figma</Highlight> to sharpen my design skills.
         </AboutParagraph>
       </AboutText>
       <AboutImgWrapper>

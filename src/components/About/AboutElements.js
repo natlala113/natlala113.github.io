@@ -34,7 +34,9 @@ export const AboutImgWrapper = styled.div`
 
 export const AboutImg = styled.img`
   display: flex;
-  width: 95%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
   border: 10px solid ${theme.colors.floralWhite};
 `;
 
@@ -70,7 +72,7 @@ export const AboutParagraph = styled.div`
   text-align: center;
   font-size: ${theme.fonts.desktop.h4};
   font-weight: 300;
-  color: ${theme.colors.floralWhite};
+  color: ${theme.colors.lightGrey};
 
   @media screen and (max-width: 1500px) {
     font-size: ${theme.fonts.desktop.h5};
@@ -82,5 +84,5 @@ export const AboutParagraph = styled.div`
 `;
 
 export const Highlight = styled.span`
-  color: ${theme.colors.lightGrey};
+  color: ${theme.colors.floralWhite};
 `;

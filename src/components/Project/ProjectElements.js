@@ -9,6 +9,7 @@ export const ProjectContent = styled.div`
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(${mainImg});
+  background-size: cover;
   flex: 1;
   @media screen and (max-width: 768px) {
     display: flex;
