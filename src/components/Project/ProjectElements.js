@@ -42,16 +42,16 @@ export const ProjectContainer = styled.div`
   margin-top: 30px;
   border-bottom: 5px solid;
   border-bottom-color: ${theme.colors.goldenYellow};
-
+  min-width: 280px;
   @media screen and (max-width: 768px) {
-    height: 500px;
+    height: auto;
     justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  ${(props) => (props.last ? `margin-bottom: 30px;` : ``)}
+  ${(props) => (props.last ? `margin-bottom: 50px;` : ``)}
 `;
 
 export const ProjectContentWrapper = styled.div`
@@ -83,6 +83,7 @@ export const ProjectImgWrapper = styled.div`
     padding: 10px;
     margin: 0px;
     ${(props) => (props.right ? `` : `margin-top: 30px;`)}
+    margin-bottom: 30px;
   }
   ${(props) =>
     props.right
@@ -129,7 +130,7 @@ export const ProjectContentHeader = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    ${(props) => (props.right ? `margin-top: 20px;` : ``)}
+    margin-top: 20px;
   }
 `;
 
@@ -157,10 +158,6 @@ export const ProjectParagraph = styled.div`
   color: ${theme.colors.darkBrown};
   @media screen and (max-width: 1100px) {
     font-size: ${theme.fonts.mobile.body};
-  }
-
-  @media screen and (max-width: 450px) {
-    font-size: ${theme.fonts.mobile.tiny};
   }
 `;
 

@@ -8,6 +8,7 @@ export const AboutContent = styled.div`
   background-color: ${theme.colors.darkBrown};
   align-items: center;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23271f18' fill-opacity='0.30' fill-rule='evenodd'/%3E%3C/svg%3E");
+  min-height: 450px;
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -18,11 +19,27 @@ export const AboutContent = styled.div`
   }
 `;
 
+export const AboutWrapper = styled.div`
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 1366px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+  }
+`;
 export const AboutImgWrapper = styled.div`
   padding: 30px;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
   margin-bottom: 10px;
   @media screen and (max-width: 768px) {
     width: 70%;
@@ -43,7 +60,7 @@ export const AboutImg = styled.img`
 export const AboutText = styled.div`
   margin-left: 20px;
   word-wrap: break-word;
-  padding: 30px;
+  padding: 10px;
 
   @media screen and (max-width: 768px) {
     width: 70%;
@@ -54,7 +71,7 @@ export const AboutText = styled.div`
 
 export const AboutHeader = styled.div`
   text-align: center;
-  font-size: ${theme.fonts.desktop.h1};
+  font-size: ${theme.fonts.desktop.h2};
   font-weight: 200;
   font-style: italic;
   color: ${theme.colors.floralWhite};
@@ -78,8 +95,22 @@ export const AboutParagraph = styled.div`
     font-size: ${theme.fonts.desktop.h5};
   }
 
+  @media screen and (max-width: 1366px) {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    font-size: ${theme.fonts.desktop.h5};
+  }
+
   @media screen and (max-width: 768px) {
+    width: 80%;
     margin-top: 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: ${theme.fonts.desktop.body};
+    width: 95%;
   }
 `;
 

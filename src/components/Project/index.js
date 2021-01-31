@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   ProjectContent,
   ProjectHeader,
@@ -21,7 +21,24 @@ import project4 from "../../images/project4.png";
 import project5 from "../../images/project5.png";
 import { FaGithub, FaRegPlayCircle } from "react-icons/fa";
 
-export default function index() {
+const Project = () => {
+  const [isSmall, setIsSmall] = useState(false);
+
+  useEffect(() => {
+    const hideMenu = () => {
+      if (window.innerWidth < 769) {
+        setIsSmall(true);
+      } else {
+        setIsSmall(false);
+      }
+    };
+
+    window.addEventListener("resize", hideMenu);
+    return () => {
+      window.removeEventListener("resize", hideMenu);
+    };
+  });
+
   return (
     <ProjectContent id="project">
       <ProjectHeader>Projects</ProjectHeader>
@@ -71,9 +88,13 @@ export default function index() {
       <ProjectContainer>
         {" "}
         <ProjectContentWrapper>
-          <ProjectImgWrapper>
-            <ProjectImg src={project2} />
-          </ProjectImgWrapper>
+          {!isSmall ? (
+            <ProjectImgWrapper>
+              <ProjectImg src={project2} />
+            </ProjectImgWrapper>
+          ) : (
+            ""
+          )}
           <ProjectText>
             <ProjectContentHeader>Transpose-PLS</ProjectContentHeader>
             <ProjectContentSubhead>
@@ -105,6 +126,13 @@ export default function index() {
               the keys they wish to play the game in.
             </ProjectParagraph>
           </ProjectText>
+          {isSmall ? (
+            <ProjectImgWrapper right={true}>
+              <ProjectImg src={project2} />
+            </ProjectImgWrapper>
+          ) : (
+            ""
+          )}
         </ProjectContentWrapper>
       </ProjectContainer>
       <ProjectContainer>
@@ -154,9 +182,13 @@ export default function index() {
       <ProjectContainer>
         {" "}
         <ProjectContentWrapper>
-          <ProjectImgWrapper>
-            <ProjectImg src={project4} />
-          </ProjectImgWrapper>
+          {!isSmall ? (
+            <ProjectImgWrapper>
+              <ProjectImg src={project4} />
+            </ProjectImgWrapper>
+          ) : (
+            ""
+          )}
           <ProjectText>
             <ProjectContentHeader>QuikJob</ProjectContentHeader>
             <ProjectContentSubhead>
@@ -190,6 +222,13 @@ export default function index() {
               <Highlight>PostgreSQL</Highlight> backend.
             </ProjectParagraph>
           </ProjectText>
+          {isSmall ? (
+            <ProjectImgWrapper right={true}>
+              <ProjectImg src={project4} />
+            </ProjectImgWrapper>
+          ) : (
+            ""
+          )}
         </ProjectContentWrapper>
       </ProjectContainer>
       <ProjectContainer last={true}>
@@ -229,4 +268,6 @@ export default function index() {
       </ProjectContainer>
     </ProjectContent>
   );
-}
+};
+
+export default Project;
