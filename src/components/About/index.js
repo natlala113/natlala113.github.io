@@ -19,14 +19,10 @@ const About = () => {
           <AboutHeader>It's Me</AboutHeader>
           <AboutParagraph>
             Hello! My name is <Highlight>Mohammad Albaghli</Highlight>, but I
-            prefer being called <Highlight>Moh</Highlight>. I am currently
-            completing my degree in{" "}
-            <Highlight>
-              Master of Computer Science at RMIT University.
-            </Highlight>{" "}
-            I enjoy listening underground music, and I am a
-            multi-instrumentalist. I play guitar, bass and the keyboard, and I
-            love singing. However, you wouldn't enjoy my singing for sure.
+            prefer being called <Highlight>Moh</Highlight>. I enjoy listening
+            underground music, and I am a multi-instrumentalist. I play guitar,
+            bass and the keyboard, and I love singing. However, you wouldn't
+            enjoy my singing for sure.
             <br></br>I love spending time on the computer, which is how I got
             into coding in the first place. I find technology quite fastinating
             but also quite scary. I mean, have you seen Black Mirror?
