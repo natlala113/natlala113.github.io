@@ -19,27 +19,20 @@ const About = () => {
           <AboutHeader>It's Me</AboutHeader>
           <AboutParagraph>
             Hello! My name is <Highlight>Mohammad Albaghli</Highlight>, but I
-            usually go by Moh. I am a passionate{" "}
-            <Highlight>full stack developer</Highlight> and a student who is
-            currently completing a{" "}
+            prefer being called <Highlight>Moh</Highlight>. I am currently
+            completing my degree in{" "}
             <Highlight>
-              Master of Computer Science degree at RMIT University
-            </Highlight>
-            . I've worked on multiple projects to improve my coding skills, and
-            I did an internship with L'Enfant as a full stack developer. I am
-            accustomed to JavaScript technologies such as{" "}
-            <Highlight>Express.js, Node.js, React.js</Highlight>. I've worked
-            with a wide array of <Highlight>cloud databases</Highlight>, such as{" "}
-            <Highlight>MongoDB</Highlight>, and I'm experienced with using{" "}
-            <Highlight>AWS technologies</Highlight>. While Javascript is my
-            specialty, I've also worked with other frameworks such as{" "}
-            <Highlight>Ruby on Rails</Highlight> and{" "}
-            <Highlight>Flask</Highlight>.
-            <br /> <br />
-            Recently, I added <Highlight>Firebase</Highlight> and{" "}
-            <Highlight>Material-UI</Highlight> to add to my skillset. I have
-            also been working with <Highlight>styled-components</Highlight> and
-            picking up <Highlight>Figma</Highlight> to sharpen my design skills.
+              Master of Computer Science at RMIT University.
+            </Highlight>{" "}
+            I enjoy listening underground music, and I am a
+            multi-instrumentalist. I play guitar, bass and the keyboard, and I
+            love singing. However, you wouldn't enjoy my singing for sure.
+            <br></br>I love spending time on the computer, which is how I got
+            into coding in the first place. I find technology quite fastinating
+            but also quite scary. I mean, have you seen Black Mirror?
+            <br></br>
+            All jokes aside, below are projects that I am proud of. I hope you
+            enjoy them as much as I enjoy creating them.
           </AboutParagraph>
         </AboutText>
         <AboutImgWrapper>
