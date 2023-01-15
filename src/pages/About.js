@@ -147,22 +147,24 @@ function About() {
         Natasha Strong (She/Her) is a software engineer based in Melbourne,
         Victoria. She attended and completed her Bachelor and Master of Computer
         Science at RMIT University in 2019 and 2021 respectively, and has been
-        working on various projects ever since. Her experience and skill et
-        opens up the option for her to dabble into many interesting projects,
-        such as working as a fullstack engineer for a SaaS at Skand Pty Ltd,
-        creates and maintains Shopify store for a famous illustrator, Cremechii,
-        and worked with fashion production company, ORDER, on their magazine
-        website.
+        working on various projects ever since. After her graduate, she has been
+        working on multiple projects, such as working as a fullstack engineer
+        for a SaaS at Skand Pty Ltd, creates and maintains Shopify store for a
+        famous art influencer, Cremechii, and collaborating with a fashion
+        production company, ORDER, to create their new magazine website.
       </AboutInfo>
       <AboutInfo>
         Natasha has grown accustomed to the Node ecosystem, with years of
-        experience in creating web based applications with React. However, she
-        does not shy away from working outside of her comfort zone, as she also
-        has dabbled in other technologies such as Shopify with Liquid template,
-        Ruby on Rails for her Capstone project and other frontend frameworks
-        like Vue. She also has extensively worked with AWS Batch, S3, CloudWatch
-        and building a CMS studio with Sanity. Natasha is available for
-        freelance commissions, contract and permanent position.
+        experience in creating web based applications with React under her belt.
+        However, she does not shy away from working outside of her comfort zone,
+        as she also has dabbled in other technologies and tech stacks such as
+        Shopify with Liquid template, Ruby on Rails and other frontend
+        frameworks like Vue. She also has extensively worked with AWS Batch, S3,
+        CloudWatch and building a CMS studio with Sanity.
+      </AboutInfo>
+      <AboutInfo>
+        Natasha is available for freelance commissions, and is open to talk
+        about contract/permanent position.
       </AboutInfo>
       <LineBreak />
       <AboutTitle>Work Experience</AboutTitle>
@@ -198,7 +200,7 @@ function About() {
       <YearInfoDiv>
         <YearParagraph>2020 - 2021</YearParagraph>
         <TitleDiv>
-          <TitleParagraph>Masters of Computer Science</TitleParagraph>
+          <TitleParagraph>Master of Computer Science</TitleParagraph>
           <JobInfoParagraph>RMIT University</JobInfoParagraph>
         </TitleDiv>
       </YearInfoDiv>
