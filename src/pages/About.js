@@ -207,7 +207,7 @@ function About() {
         </TitleDiv>
       </YearInfoDiv>
       <YearInfoDiv>
-        <YearParagraph>2020 - 2021</YearParagraph>
+        <YearParagraph>2017 - 2019</YearParagraph>
         <TitleDiv>
           <TitleParagraph>Bachelor of Computer Science</TitleParagraph>
           <JobInfoParagraph>RMIT University</JobInfoParagraph>
