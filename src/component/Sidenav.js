@@ -3,10 +3,15 @@ import styled from "styled-components";
 import React from "react";
 
 const SidenavContainer = styled.div`
-  position: absolute;
   left: 0%;
   top: 0%;
   width: 22.5%;
+
+  position: absolute;
+
+  @media (max-width: 667px) {
+    position: static;
+  }
 `;
 
 const StyledBurger = styled.button`
@@ -24,7 +29,7 @@ const StyledBurger = styled.button`
   padding: 0;
   z-index: 10;
   margin-right: 2rem;
-  margin-top: 5rem;
+  margin-top: ${({ viewerIsOpen }) => (viewerIsOpen ? "3rem" : "5rem")};
 
   &:focus {
     outline: none;
@@ -187,13 +192,13 @@ const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
       <MenuItem>
-        <StyledLink to="/portfolio" onClick={() => setOpen(!open)}>
-          Portfolio
+        <StyledLink to="/about" onClick={() => setOpen(!open)}>
+          Info
         </StyledLink>
       </MenuItem>
       <MenuItem>
-        <StyledLink to="/about" onClick={() => setOpen(!open)}>
-          Info
+        <StyledLink to="/portfolio" onClick={() => setOpen(!open)}>
+          Portfolio
         </StyledLink>
       </MenuItem>
       <MenuItem>
@@ -214,9 +219,13 @@ const Menu = ({ open, setOpen }) => {
   );
 };
 
-const Burger = ({ open, setOpen }) => {
+const Burger = ({ open, setOpen, viewerIsOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger
+      open={open}
+      onClick={() => setOpen(!open)}
+      viewerIsOpen={viewerIsOpen}
+    >
       <div />
       <div />
       <div />
@@ -224,28 +233,28 @@ const Burger = ({ open, setOpen }) => {
   );
 };
 
-function Sidenav({ open, setOpen }) {
+function Sidenav({ open, setOpen, viewerIsOpen }) {
   const node = React.useRef();
 
   return (
     <>
-      <SidenavContainer>
+      <SidenavContainer open={open}>
         <HeaderContainer>
-          <HeaderStyledLink exact to="/">
+          <HeaderStyledLink open={open} exact to="/">
             Kitty Kween Web Solution
           </HeaderStyledLink>
         </HeaderContainer>
       </SidenavContainer>
       <div ref={node}>
-        <Burger open={open} setOpen={setOpen} />
+        <Burger open={open} setOpen={setOpen} viewerIsOpen={viewerIsOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
       <MenuContainer>
         <MenuItem>
-          <StyledLink to="/portfolio">Portfolio</StyledLink>
+          <StyledLink to="/about">Info</StyledLink>
         </MenuItem>
         <MenuItem>
-          <StyledLink to="/about">Info</StyledLink>
+          <StyledLink to="/portfolio">Portfolio</StyledLink>
         </MenuItem>
         <MenuItem>
           <StyledLink to="/contact">Contact</StyledLink>

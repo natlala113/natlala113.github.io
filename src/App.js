@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styled, { css } from "styled-components";
-import React from "react";
+import React, { useState } from "react";
 
 import Sidenav from "./component/Sidenav";
 import Home from "./pages/Home";
@@ -22,7 +22,7 @@ const ContentContainer = styled.div`
   }
 
   @media (max-width: 667px) {
-    margin-top: 13rem;
+    margin-top: 3rem;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -41,10 +41,11 @@ const ContentContainer = styled.div`
 
 function App() {
   const [open, setOpen] = React.useState(false);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   return (
     <>
-      <Sidenav open={open} setOpen={setOpen} />
+      <Sidenav open={open} setOpen={setOpen} viewerIsOpen={viewerIsOpen} />
       <ContentContainer open={open}>
         <Route
           render={({ location }) => (
@@ -57,7 +58,12 @@ function App() {
               >
                 <Switch>
                   <Route path="/about" component={About} />
-                  <Route path="/portfolio" component={Portfolio} />
+                  <Route path="/portfolio">
+                    <Portfolio
+                      viewerIsOpen={viewerIsOpen}
+                      setViewerIsOpen={setViewerIsOpen}
+                    />
+                  </Route>
                   <Route path="/contact" component={Contact} />
                   <Route exact path="/" component={Home} />
                 </Switch>

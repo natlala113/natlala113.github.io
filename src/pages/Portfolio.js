@@ -22,19 +22,22 @@ const AboutHeader = styled.p`
   font-size: 2rem;
   font-family: "Julius Sans One", sans-serif;
   font-weight: 600;
+  margin-top: 0;
   @media (max-width: 1024px) {
     font-size: 1.5rem;
   }
 `;
 
-function Portfolio() {
+function Portfolio({ viewerIsOpen, setViewerIsOpen }) {
   const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
+  const openLightbox = useCallback(
+    (event, { photo, index }) => {
+      setCurrentImage(index);
+      setViewerIsOpen(true);
+    },
+    [setViewerIsOpen]
+  );
 
   const closeLightbox = () => {
     setCurrentImage(0);

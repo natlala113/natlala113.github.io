@@ -48,13 +48,6 @@ export const photos = [
     title: "Skand File Management System",
   },
   {
-    src: "pictures/siege1.jpg",
-    width: 5,
-    height: 3,
-    title:
-      "Siege Operator Randomizer, deprecated: https://testing-hololo.herokuapp.com/",
-  },
-  {
     src: "pictures/tranposepls.jpg",
     width: 2,
     height: 3,
@@ -63,6 +56,13 @@ export const photos = [
   },
   {
     src: "pictures/siege2.jpg",
+    width: 5,
+    height: 3,
+    title:
+      "Siege Operator Randomizer, deprecated: https://testing-hololo.herokuapp.com/",
+  },
+  {
+    src: "pictures/siege1.jpg",
     width: 5,
     height: 3,
     title:

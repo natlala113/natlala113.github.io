@@ -17,6 +17,8 @@ const AboutHeader = styled.p`
   font-size: 2rem;
   font-family: "Julius Sans One", sans-serif;
   font-weight: 600;
+
+  margin-top: 0;
   @media (max-width: 1024px) {
     font-size: 1.5rem;
   }
