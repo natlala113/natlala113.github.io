@@ -149,8 +149,8 @@ function About() {
         Natasha Strong (She/Her) is a highly skilled software engineer with
         expertise in the Node ecosystem and a strong background in web-based
         application development using React. She holds a Bachelor and Master of
-        Computer Science from RMIT University, and has been actively working on
-        various projects since her graduation in 2019 and 2021, respectively.
+        Computer Science from RMIT University. She has been actively working on
+        various projects since her graduations.
       </AboutInfo>
       <AboutInfo>
         Strong has extensive experience in creating and maintaining Shopify
@@ -159,14 +159,13 @@ function About() {
         ORDER, to create their new magazine website. In addition to her
         proficiency in React, Strong is also familiar with other technologies
         and tech stacks such as Shopify with Liquid template, Ruby on Rails and
-        Vue. She has also worked extensively with AWS Batch, S3, CloudWatch and
-        building a CMS studio with Sanity.
+        Vue. Furthermore, Strong has worked extensively with AWS Batch, S3,
+        CloudWatch and building a CMS studio with Sanity.
       </AboutInfo>
       <AboutInfo>
-        Strong is open to freelance commissions and is available for contract or
-        permanent positions. She is a dedicated and highly motivated
-        professional with a proven track record of delivering high-quality
-        software solutions.
+        Dedicated and highly motivated with a proven track record, Strong is
+        open to freelance commissions and is available for contract or permanent
+        positions.
       </AboutInfo>
       <LineBreak />
       <AboutTitle>Work Experience</AboutTitle>
