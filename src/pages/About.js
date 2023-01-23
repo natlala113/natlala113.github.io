@@ -172,14 +172,16 @@ function About() {
       <YearInfoDiv>
         <YearParagraph>2022 - Present</YearParagraph>
         <TitleDiv>
-          <TitleParagraph>Cremechii Illustration</TitleParagraph>
+          <TitleParagraph>
+            Cremechii Illustration (Contract-based)
+          </TitleParagraph>
           <JobInfoParagraph>Shopify developer, tech adviser</JobInfoParagraph>
         </TitleDiv>
       </YearInfoDiv>
       <YearInfoDiv>
         <YearParagraph>2022 - 2023</YearParagraph>
         <TitleDiv>
-          <TitleParagraph>ORDER Productions</TitleParagraph>
+          <TitleParagraph>ORDER Productions (Contract-based)</TitleParagraph>
           <JobInfoParagraph>
             Worked on ORDER Magazine and Sanity Studio CMS
           </JobInfoParagraph>
@@ -188,7 +190,7 @@ function About() {
       <YearInfoDiv>
         <YearParagraph>2021 - 2022</YearParagraph>
         <TitleDiv>
-          <TitleParagraph>Skand Pty Ltd</TitleParagraph>
+          <TitleParagraph>Skand Pty Ltd (Full-Time)</TitleParagraph>
           <JobInfoParagraph>
             Worked on React file management system application akin to Google
             Drive, AWS Batch for point cloud tiling, zipping and unzipping, AWS
