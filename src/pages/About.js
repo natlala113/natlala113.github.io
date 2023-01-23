@@ -177,7 +177,7 @@ function About() {
         </TitleDiv>
       </YearInfoDiv>
       <YearInfoDiv>
-        <YearParagraph>2022 - Present</YearParagraph>
+        <YearParagraph>2022 - 2023</YearParagraph>
         <TitleDiv>
           <TitleParagraph>ORDER Productions</TitleParagraph>
           <JobInfoParagraph>
