@@ -7,7 +7,7 @@ export const photos = [
   },
   {
     src: "pictures/cremechii2.jpg",
-    width: 2,
+    width: 1,
     height: 3,
     title: "Cremechii's Shopify Store: https://cremechii.com/",
   },
@@ -15,13 +15,13 @@ export const photos = [
     src: "pictures/order1.jpg",
     width: 3,
     height: 5,
-    title: "ORDER Magazine revamp, coming soon",
+    title: "ORDER Magazine: https://order-mag.com/",
   },
   {
     src: "pictures/order2.jpg",
-    width: 5,
+    width: 4,
     height: 3,
-    title: "ORDER Magazine revamp, coming soon",
+    title: "ORDER Magazine: https://order-mag.com/",
   },
   {
     src: "pictures/trivia1.jpg",
