@@ -29,7 +29,7 @@ const StyledBurger = styled.button`
   padding: 0;
   z-index: 10;
   margin-right: 2rem;
-  margin-top: ${({ viewerIsOpen }) => (viewerIsOpen ? "3rem" : "5rem")};
+  margin-top: ${({ viewerIsOpen }) => (viewerIsOpen ? "3rem" : "3rem")};
 
   &:focus {
     outline: none;
@@ -241,7 +241,7 @@ function Sidenav({ open, setOpen, viewerIsOpen }) {
       <SidenavContainer open={open}>
         <HeaderContainer>
           <HeaderStyledLink open={open} exact to="/">
-            Kitty Kween Web Solution
+            Natasha Strong
           </HeaderStyledLink>
         </HeaderContainer>
       </SidenavContainer>
