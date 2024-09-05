@@ -6,12 +6,6 @@ export const photos = [
     title: "Cremechii's Shopify Store: https://cremechii.com/",
   },
   {
-    src: "pictures/cremechii2.jpg",
-    width: 1,
-    height: 3,
-    title: "Cremechii's Shopify Store: https://cremechii.com/",
-  },
-  {
     src: "pictures/order1.jpg",
     width: 3,
     height: 5,
