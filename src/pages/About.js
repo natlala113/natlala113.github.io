@@ -163,12 +163,22 @@ function About() {
         CloudWatch and building a CMS studio with Sanity.
       </AboutInfo>
       <AboutInfo>
-        Dedicated and highly motivated with a proven track record, Strong is
-        open to freelance commissions and is available for contract or permanent
-        positions.
+        Currently, Strong is a valued member of the Grow My Money team, a renounced cashback reward
+        application that aims to bridge gender superannuation gap and help assist in hopme loan repayments.
       </AboutInfo>
       <LineBreak />
       <AboutTitle>Work Experience</AboutTitle>
+      <YearInfoDiv>
+        <YearParagraph>2022 - Present</YearParagraph>
+        <TitleDiv>
+          <TitleParagraph>Grow My Money Pty Ltd (Full-Time)</TitleParagraph>
+          <JobInfoParagraph>
+            Full stack developer, worked on various internal and external projects such as revamping
+            internal admin dashboard, rebranding mobile application with React Native library and maintaining
+            web application written in Gatsby, connected to Sanity CMS.
+          </JobInfoParagraph>
+        </TitleDiv>
+      </YearInfoDiv>
       <YearInfoDiv>
         <YearParagraph>2022 - Present</YearParagraph>
         <TitleDiv>
